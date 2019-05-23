@@ -1,0 +1,23 @@
+#第三題
+library(readr)
+X106_education <- read_csv("C:/Users/Yvetta Shih/Desktop/big data/106 education.csv")
+View(X106_education)
+
+#以106年度的資料來看，哪個職業別念研究所最划算
+#a.	取出大學薪資欄位與研究所薪資欄位
+S106<-X106_education[,c(2,1,11,13)]
+
+
+#b.	計算研究所薪資 / 大學薪資，並用此值在表格中新增一個欄位
+#整理大學薪資
+S106$`大學-薪資`<-gsub("—","",S106$`大學-薪資`)
+S106$`大學-薪資`<-as.numeric(S106$`大學-薪資`)
+#整理研究所薪資
+S106$`研究所及以上-薪資`<-gsub("—","",S106$`研究所及以上-薪資`)
+S106$`研究所及以上-薪資`<-as.numeric(S106$`研究所及以上-薪資`)
+#計算研究所薪資 / 大學薪資
+S106$compare<-c(S106$`研究所及以上-薪資`/S106$`大學-薪資`)
+na.omit(S106)
+
+#c.	排序
+View(head(S106[order(desc(S106$compare)),],10))

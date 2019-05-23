@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1558596174084.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "51AEBE6F",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1558596174084,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "3915C905",
+        "caption" : "X106_education",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=X106_education&cache_key=3915C905",
+        "displayedObservations" : "140",
+        "environment" : "",
+        "object" : "X106_education",
+        "preview" : "0",
+        "totalObservations" : "140",
+        "variables" : "14"
+    },
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

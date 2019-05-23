@@ -1,0 +1,18 @@
+#第四題
+library(readr)
+X106_education <- read_csv("C:/Users/Yvetta Shih/Desktop/big data/106 education.csv")
+View(X106_education)
+
+#並呈現相對應的大學畢業薪資與研究所畢業薪資
+library(dplyr)
+a106_education<-X106_education[,c(2,1,11,13)]%>%filter(大職業別%in%c("服務業部門-事務支援人員",
+                                                                   "服務業部門-專業人員",
+                                                                  "批發及零售業-服務及銷售工作人員",
+                                                                  "金融及保險業-專業人員",
+                                                                  "金融及保險業-服務及銷售工作人員"))
+
+#研究所薪資與大學薪資差多少呢
+a106_education$`大學-薪資`<-as.numeric(a106_education$`大學-薪資`)
+a106_education$`研究所及以上-薪資`<-gsub("—","",a106_education$`研究所及以上-薪資`)
+a106_education$`研究所及以上-薪資`<-as.numeric(a106_education$`研究所及以上-薪資`)
+a106_education$compare<-c(a106_education$`研究所及以上-薪資`-a106_education$`大學-薪資`)

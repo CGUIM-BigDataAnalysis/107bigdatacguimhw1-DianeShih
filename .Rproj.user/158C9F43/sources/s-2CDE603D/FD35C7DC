@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1557973286615.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2639321779",
+    "id" : "FD35C7DC",
+    "lastKnownWriteTime" : 1558603335,
+    "last_content_update" : 1558603335573,
+    "path" : "~/GitHub/107bigdatacguimhw1-DianeShih/SalaryAnalysis.Rmd",
+    "project_path" : "SalaryAnalysis.Rmd",
+    "properties" : {
+        "cursorPosition" : "202,0",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "196"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

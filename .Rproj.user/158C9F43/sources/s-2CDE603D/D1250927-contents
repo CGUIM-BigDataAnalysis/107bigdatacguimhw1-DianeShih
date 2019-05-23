@@ -2,15 +2,15 @@
 #將103年度各教育程度別初任人員的薪資資料_education
 library(readr)
 education <- read_csv("C:/Users/Yvetta Shih/Desktop/big data/education.csv")
-View(education)
+
 #將106年度各教育程度別初任人員的薪資資料_X106_education
 library(readr)
 X106_education <- read_csv("C:/Users/Yvetta Shih/Desktop/big data/106 education.csv")
-View(X106_education)
+
 #將103106年資料結合_education103106
 library(dplyr)
 education103106<-inner_join(education,X106_education,by="大職業別")
-View(education103106)
+
 
 #計算106年度大學畢業薪資 / 103年度大學畢業薪資，並用此值在新表格中新增一個欄位
 education103106$`大學-薪資.y`<-gsub("—","",education103106$`大學-薪資.y`)
@@ -31,7 +31,7 @@ education103106_filter<-education103106_filter[,-28]
 education103106_higher<-arrange(education103106,desc(educationcompare))%>%
   filter(educationcompare>1)
 education103106_higher<-na.omit(education103106_higher)
-View(education103106_higher[,c(2,1,11,15,24,28)])
+View(head(education103106_higher[,c(2,1,11,15,24,28)],10))
 View(education103106_higher)
 
 

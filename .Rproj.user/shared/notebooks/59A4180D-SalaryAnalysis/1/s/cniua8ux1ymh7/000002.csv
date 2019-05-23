@@ -1,0 +1,74 @@
+"0","#å°‡103å¹´åº¦å„æ•™è‚²ç¨‹åº¦åˆ¥åˆä»»äººå“¡çš„è–ªè³‡è³‡æ–™_education
+library(readr)
+"
+"2","package ¡¥readr¡¦ was built under R version 3.5.3"
+"2","Warning messages:
+"
+"2","1: "
+"2","In strsplit(x, ""\n"") :"
+"2"," input string 1 is invalid in this locale
+"
+"2","2: "
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","education <- read_csv(""C:/Users/Yvetta Shih/Desktop/big data/education.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¦~«× = [32mcol_double()[39m,
+  ¤jÂ¾·~§O = [31mcol_character()[39m,
+  `¸g±`©ÊÁ~¸ê-Á~¸ê` = [32mcol_double()[39m,
+  `¸g±`©ÊÁ~¸ê-¤k/¨k` = [32mcol_double()[39m,
+  `°ê¤¤¤Î¥H¤U-Á~¸ê` = [31mcol_character()[39m,
+  `°ê¤¤¤Î¥H¤U-¤k/¨k` = [31mcol_character()[39m,
+  `°ª¤¤©Î°ªÂ¾-Á~¸ê` = [31mcol_character()[39m,
+  `°ª¤¤©Î°ªÂ¾-¤k/¨k` = [31mcol_character()[39m,
+  `±M¬ì-Á~¸ê` = [31mcol_character()[39m,
+  `±M¬ì-¤k/¨k` = [31mcol_character()[39m,
+  `¤j¾Ç-Á~¸ê` = [31mcol_character()[39m,
+  `¤j¾Ç-¤k/¨k` = [31mcol_character()[39m,
+  `¬ã¨s©Ò¤Î¥H¤W-Á~¸ê` = [31mcol_character()[39m,
+  `¬ã¨s©Ò¤Î¥H¤W-¤k/¨k` = [31mcol_character()[39m
+)
+"
+"0","#å°‡106å¹´åº¦å„æ•™è‚²ç¨‹åº¦åˆ¥åˆä»»äººå“¡çš„è–ªè³‡è³‡æ–™_X106_education"
+"0","library(readr)"
+"0","X106_education <- read_csv(""C:/Users/Yvetta Shih/Desktop/big data/106 education.csv"")"
+"2","Parsed with column specification:
+cols(
+  ¦~«× = [32mcol_double()[39m,
+  ¤jÂ¾·~§O = [31mcol_character()[39m,
+  `¸g±`©ÊÁ~¸ê-Á~¸ê` = [32mcol_double()[39m,
+  `¸g±`©ÊÁ~¸ê-¤k/¨k` = [31mcol_character()[39m,
+  `°ê¤¤¤Î¥H¤U-Á~¸ê` = [31mcol_character()[39m,
+  `°ê¤¤¤Î¥H¤U-¤k/¨k` = [31mcol_character()[39m,
+  `°ª¤¤©Î°ªÂ¾-Á~¸ê` = [31mcol_character()[39m,
+  `°ª¤¤©Î°ªÂ¾-¤k/¨k` = [31mcol_character()[39m,
+  `±M¬ì-Á~¸ê` = [31mcol_character()[39m,
+  `±M¬ì-¤k/¨k` = [31mcol_character()[39m,
+  `¤j¾Ç-Á~¸ê` = [31mcol_character()[39m,
+  `¤j¾Ç-¤k/¨k` = [31mcol_character()[39m,
+  `¬ã¨s©Ò¤Î¥H¤W-Á~¸ê` = [31mcol_character()[39m,
+  `¬ã¨s©Ò¤Î¥H¤W-¤k/¨k` = [31mcol_character()[39m
+)
+"
+"0","#å°‡103106å¹´è³‡æ–™çµåˆ_education103106"
+"0","library(dplyr)"
+"2","package ¡¥dplyr¡¦ was built under R version 3.5.3"
+"2","
+Attaching package: ¡¥dplyr¡¦
+
+"
+"2","The following objects are masked from ¡¥package:stats¡¦:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ¡¥package:base¡¦:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","education103106<-inner_join(education,X106_education,by=""å¤§è·æ¥­åˆ¥"")"
